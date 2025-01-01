@@ -66,10 +66,10 @@ Before cloning and running the project, ensure the following software is install
    - **DELETE** /projects/:id: Delete a project by ID
 
 2. **Stories**
-- **GET** /stories: Get a list of all stories
-- **POST** /stories: Create a new story
-- **PUT** /stories/:id: Update a story by ID
-- **DELETE** /stories/:id: Delete a story by ID
+   - **GET** /stories: Get a list of all stories
+   - **POST** /stories: Create a new story
+   - **PUT** /stories/:id: Update a story by ID
+   - **DELETE** /stories/:id: Delete a story by ID
 
 3. **Users**
    - **GET** /users: Get a list of all users
@@ -78,10 +78,10 @@ Before cloning and running the project, ensure the following software is install
    - **DELETE** /users/:id: Delete a user by ID
 
 ## **Project Structure**
-**models/**: Sequelize models for Project, Story, Task, and User.
-**migrations/**: Sequelize migrations to create the corresponding database tables.
-**seeders/**: Seeders to populate the database with initial data.
-**config/**: Database configuration.
-**app.js**: Main Express application entry point.
-**routes/**: Define API routes for handling CRUD operations.
+- **models/**: Sequelize models for Project, Story, Task, and User.
+- **migrations/**: Sequelize migrations to create the corresponding database tables.
+- **seeders/**: Seeders to populate the database with initial data.
+- **config/**: Database configuration.
+- **app.js**: Main Express application entry point.
+- **routes/**: Define API routes for handling CRUD operations.
 
