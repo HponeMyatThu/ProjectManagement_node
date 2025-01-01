@@ -57,5 +57,31 @@ Before cloning and running the project, ensure the following software is install
    ```bash
    node app.js
 
-   
+## Endpoints (The API exposes the following routes)
+
+1. **Projects**
+   - **GET** /projects: Get a list of all projects
+   - **POST** /projects: Create a new project
+   - **PUT** /projects/:id: Update a project by ID
+   - **DELETE** /projects/:id: Delete a project by ID
+
+2. **Stories**
+- **GET** /stories: Get a list of all stories
+- **POST** /stories: Create a new story
+- **PUT** /stories/:id: Update a story by ID
+- **DELETE** /stories/:id: Delete a story by ID
+
+3. **Users**
+   - **GET** /users: Get a list of all users
+   - **POST** /users: Create a new user
+   - **PUT** /users/:id: Update a user by ID
+   - **DELETE** /users/:id: Delete a user by ID
+
+## **Project Structure**
+**models/**: Sequelize models for Project, Story, Task, and User.
+**migrations/**: Sequelize migrations to create the corresponding database tables.
+**seeders/**: Seeders to populate the database with initial data.
+**config/**: Database configuration.
+**app.js**: Main Express application entry point.
+**routes/**: Define API routes for handling CRUD operations.
 
