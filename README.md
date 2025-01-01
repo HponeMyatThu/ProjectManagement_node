@@ -27,3 +27,35 @@ Before cloning and running the project, ensure the following software is install
    ```bash
    git clone <repository_url>
    cd project-management-app
+   
+2. **Install dependencies**:
+   ```bash
+   npm install
+
+3. **Create a config.json file inside the config folder**:
+   ```bash
+   {
+      "development":
+         {
+          "username": "your_postgres_user",
+          "password": "your_postgres_pass",
+          "database": "project_management_db",
+          "host": "localhost",
+          "dialect": "postgres"
+         }
+   }
+
+4. **Generate and run migrations to create tables in your PostgreSQL**:
+   ```bash
+   npx sequelize-cli db:migrate
+
+5. **Seed the database with initial data**:
+   ```bash
+   npx sequelize-cli db:seed:all
+
+6. **Start the application:**
+   ```bash
+   node app.js
+
+   
+
